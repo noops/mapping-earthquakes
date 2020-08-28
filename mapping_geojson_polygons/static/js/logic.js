@@ -53,9 +53,9 @@ d3.json(torontoHoods).then(function(data) {
 L.geoJson(data, {
   style: style,
   //turn each feature into a marker
-  forEachFeature: function(feature, layer){
-    console.log(feature),
-    layer.bindPopup("<h2>Neighborhood: "+feature[0].properties.AREA_NAME+"</h2>");
+  onEachFeature: function(feature, layer){
+    console.log(layer),
+    layer.bindPopup("<h3>Neighborhood: "+feature.properties.AREA_NAME+"</h3>");
 }
 }).addTo(map);
 });
