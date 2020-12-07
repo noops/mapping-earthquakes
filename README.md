@@ -4,8 +4,8 @@
 # Table of Contents 
   - [Resources](#resources)
   - [Data](#data)
+  - [Overview](#overview)
   - [Results](#results)
-   - [Overview](#overview)
   
 ### Resources
 
@@ -17,5 +17,5 @@ Data for this project is gathered from https://earthquake.usgs.gov/earthquakes/f
 ### Overview  
 The goal of this project was to create an interactive global map that shows up to date earthquake information from the previous 7 days. A popup marker is generated for each earthquake. The size and color of the marker correspond to the magnitude of the earthquake. There is also a tectonic plate overlay. Mapbox API and Leaflet javascript library combine to create the map. It is able to be viewed locally using a python http.server. 
 
-
+### Results
 ![](map_pic.png)
